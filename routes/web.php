@@ -41,11 +41,15 @@ Route::get('/player', function () {
     return Inertia::render('Player');
 });
 
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
+});
+
 Route::get('/login', function () {
     sleep(2.5);
     return Inertia::render('Login');
 });
 
-Route::get('/settings', function () {
-    return Inertia::render('Settings');
+Route::post('/logout', function () {
+    dd("Logging out...");
 });
