@@ -42,6 +42,7 @@ Route::get('/player', function () {
 });
 
 Route::get('/login', function () {
+    sleep(2.5);
     return Inertia::render('Login');
 });
 
