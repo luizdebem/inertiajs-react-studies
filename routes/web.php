@@ -36,3 +36,15 @@ Route::get('/', function () {
         ]
     ]);
 });
+
+Route::get('/player', function () {
+    return Inertia::render('Player');
+});
+
+Route::get('/login', function () {
+    return Inertia::render('Login');
+});
+
+Route::get('/settings', function () {
+    return Inertia::render('Settings');
+});

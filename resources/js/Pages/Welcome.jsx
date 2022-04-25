@@ -1,12 +1,13 @@
 import React from "react";
+import Nav from "../Shared/Nav";
 
 const Welcome = (props) => {
   const { players } = props;
 
   return (
     <>
-      <h1 class="font-bold">Hello World!</h1>
-      <p>Laravel, InertiaJS & ReactJS.</p>
+      <Nav />
+
       {!!players.length
         && <table class="border">
           <tr class="border">
