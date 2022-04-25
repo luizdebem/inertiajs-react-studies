@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('Welcome');
+    return Inertia::render('Welcome', [
+        'players' => [
+            [
+                "name" => "Max Scherzer",
+                "number" => 21
+            ],
+            [
+                "name" => "Jaboc deGrom",
+                "number" => 48
+            ],
+            [
+                "name" => "Francisco Lindor",
+                "number" => 12
+            ],
+            [
+                "name" => "Luis Guillorme",
+                "number" => 13
+            ]
+        ]
+    ]);
 });
