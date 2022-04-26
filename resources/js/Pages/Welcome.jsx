@@ -9,16 +9,16 @@ const Welcome = (props) => {
       <Nav />
 
       {!!players.length
-        && <table class="border">
-          <tr class="border">
-            <th class="p-2">Name</th>
-            <th class="p-2">Number</th>
+        && <table className="border">
+          <tr className="border">
+            <th className="p-2">Name</th>
+            <th className="p-2">Number</th>
           </tr>
           {players.map((player) => {
             return (
-              <tr class="border text-center">
-                <td class="p-2">{player.name}</td>
-                <td class="p-2">{player.number}</td>
+              <tr className="border text-center">
+                <td className="p-2">{player.name}</td>
+                <td className="p-2">{player.number}</td>
               </tr>
             );
           })

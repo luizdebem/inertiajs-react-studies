@@ -42,7 +42,7 @@ Route::get('/player', function () {
 });
 
 Route::get('/settings', function () {
-    return Inertia::render('Settings');
+    return Inertia::render('Settings', [ "time" => now()->toTimeString() ]);
 });
 
 Route::get('/login', function () {
