@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <Nav />
       </header>
 
-      <main>
+      <main className="mx-auto">
         {children}
       </main>
 
