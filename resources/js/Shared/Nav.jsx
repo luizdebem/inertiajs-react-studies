@@ -4,12 +4,6 @@ import { Link } from "@inertiajs/inertia-react";
 const Nav = () => {
   const page = window.location.pathname;
   return (
-    <>
-      <div className="mb-6">
-        <h1 className="font-bold">Hello World!</h1>
-        <p>Laravel, InertiaJS & ReactJS.</p>
-      </div>
-
       <nav className="mb-6">
         <ul className="flex flex-row justify-around items-center">
           <li><Link className={ page === "/" ? "font-bold underline" : "" } href="/">Home</Link></li>
@@ -18,7 +12,6 @@ const Nav = () => {
           <li><Link href="/logout" method="post" as="button">Logout</Link></li>
         </ul>
       </nav>
-    </>
   )
 }
 

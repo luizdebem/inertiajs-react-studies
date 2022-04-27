@@ -1,13 +1,12 @@
 import React from "react";
+import Layout from "../Shared/Layout";
 import Nav from "../Shared/Nav";
 
 const Welcome = (props) => {
   const { players } = props;
 
   return (
-    <>
-      <Nav />
-
+    <Layout>
       {!!players.length
         && <table className="border">
           <thead>
@@ -29,7 +28,7 @@ const Welcome = (props) => {
           </tbody>
         </table>
       }
-    </>
+    </Layout>
   );
 };
 
