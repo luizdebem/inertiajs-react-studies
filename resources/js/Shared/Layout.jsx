@@ -7,16 +7,15 @@ const Layout = ({ children }) => {
   return (
     <div className="m-8 flex flex-col min-h-[calc(100vh-4rem)]">
       <header>
-        <div className="mb-6">
+        <div className="mb-6 flex flex-row justify-between items-center">
           <div>
-          <h1 className="font-bold text-3xl">Hello World!</h1>
-          <p>Laravel, InertiaJS & ReactJS.</p>
+            <h1 className="font-bold text-3xl">Hello World!</h1>
+            <p>Laravel, InertiaJS & ReactJS.</p>
           </div>
 
-          <div>
-
+          <div className="text-xs">
+            <p>Logged in with {auth.user.displayName}</p>
           </div>
-
         </div>
 
         <Nav />
