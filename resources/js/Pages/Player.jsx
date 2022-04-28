@@ -4,10 +4,10 @@ import Nav from "../Shared/Nav";
 
 const Player = () => {
   return (
-    <Layout>
-      <div>Player page</div>
-    </Layout>
+    <div>Player page</div>
   )
 }
+
+Player.layout = page => <Layout> {page} </Layout>;
 
 export default Player

@@ -7,7 +7,7 @@ const Welcome = () => {
   const { players } = usePage().props;
 
   return (
-    <Layout>
+    <>
       {!!players.length
         && <table className="border">
           <thead>
@@ -29,8 +29,10 @@ const Welcome = () => {
           </tbody>
         </table>
       }
-    </Layout>
+    </>
   );
 };
+
+Welcome.layout = page => <Layout> {page} </Layout>
 
 export default Welcome;

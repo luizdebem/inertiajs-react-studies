@@ -4,10 +4,10 @@ import Nav from "../Shared/Nav";
 
 const Login = () => {
   return (
-    <Layout>
-      <div>Login page</div>
-    </Layout>
+    <div>Login page</div>
   )
 }
+
+Login.layout = page => <Layout> {page} </Layout>;
 
 export default Login
