@@ -1,13 +1,22 @@
+import { usePage } from '@inertiajs/inertia-react';
 import React from 'react'
 import Nav from "./Nav";
 
 const Layout = ({ children }) => {
+  const { auth } = usePage().props;
   return (
     <div className="m-8 flex flex-col min-h-[calc(100vh-4rem)]">
       <header>
         <div className="mb-6">
+          <div>
           <h1 className="font-bold text-3xl">Hello World!</h1>
           <p>Laravel, InertiaJS & ReactJS.</p>
+          </div>
+
+          <div>
+
+          </div>
+
         </div>
 
         <Nav />

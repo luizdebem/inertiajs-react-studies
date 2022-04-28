@@ -1,10 +1,10 @@
 import React from 'react'
 import Nav from "../Shared/Nav";
-import { Link } from '@inertiajs/inertia-react';
+import { Link, usePage } from '@inertiajs/inertia-react';
 import Layout from '../Shared/Layout';
 
-const Settings = (props) => {
-  const { time } = props;
+const Settings = () => {
+  const { time } = usePage().props;
   return (
     <Layout>
       <p>Scroll down!</p>

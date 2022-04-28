@@ -1,9 +1,10 @@
+import { usePage } from "@inertiajs/inertia-react";
 import React from "react";
 import Layout from "../Shared/Layout";
 import Nav from "../Shared/Nav";
 
-const Welcome = (props) => {
-  const { players } = props;
+const Welcome = () => {
+  const { players } = usePage().props;
 
   return (
     <Layout>
